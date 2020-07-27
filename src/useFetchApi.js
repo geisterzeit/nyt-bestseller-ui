@@ -1,7 +1,6 @@
 import { useReducer, useEffect } from "react";
 import axios from "axios";
 
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 const URL = [
   "https://api.nytimes.com/svc/books/lists/current/hardcover-fiction.json",
   "https://api.nytimes.com/svc/books/lists/current/hardcover-nonfiction.json",
@@ -45,7 +44,7 @@ export default function useFetchApi(category) {
     dispatch({ type: ACTIONS.MAKE_REQUEST });
 
     axios
-      .get(CORS_PROXY + URL[category], {
+      .get(URL[category], {
         cancelToken: cancelToken.token,
         params: {
           "api-key": API_KEY,

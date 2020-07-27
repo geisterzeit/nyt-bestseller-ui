@@ -3,15 +3,18 @@ import quoteMark from "./assets/quotation-marks.svg";
 
 export default function BookListing({ book }) {
   return (
-    <div className="relative mx-auto md:flex">
-      <div className="mx-auto md:flex-inital">
+    <div className="relative mx-auto md:flex flex-wrap justify-center">
+      {/* Cover artwork */}
+      <div className="md:flex-inital">
         <img
-          className="rounded-md shadow-lg hover:shadow-xl transition ease-in duration-200 m-8 w-64"
+          className="rounded-md shadow-lg my-8 w-32 md:m-8 w-64 hover:shadow-xl transition ease-in duration-200"
           src={book.book_image}
           alt={book.title}
         />
       </div>
-      <div className="mx-auto mt-8 md:flex-1">
+
+      {/* Title, description and buy-button */}
+      <div className="mt-8 md:flex-1">
         <h1 className="text-4xl font-bold">{book.title}</h1>
         <h2 className="text-3xl text-gray-500">{book.author}</h2>
         <div className="relative">
@@ -29,6 +32,8 @@ export default function BookListing({ book }) {
               Buy on Amazon
             </a>
           </div>
+
+          {/* Decorative quotation marks behind the descriptive text */}
           <img
             src={quoteMark}
             className="absolute left-0 top-0"
