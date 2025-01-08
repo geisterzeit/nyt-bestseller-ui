@@ -1,6 +1,6 @@
 # NYT Bestseller React Application
 
-An example react application, which displays the current most successful books according to the New York Time. The information gets pulled from the [NYT Developer API](https://developer.nytimes.com/apis) and is displayed using reactjs and [tailwind-css](https://tailwindcss.com/) with a focus on a responsive and minimal design.
+An example react application, which displays the current most successful books according to the New York Times. The information gets pulled from the [NYT Developer API](https://developer.nytimes.com/apis) and is displayed using reactjs and [tailwind-css](https://tailwindcss.com/) with a focus on a responsive and minimal design.
 
 ![Screenshot](https://i.postimg.cc/cLWTf9Kv/image.png)
 
